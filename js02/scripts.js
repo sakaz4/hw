@@ -16,7 +16,7 @@ console.log('Меня зовут ' + name + ' я родился в ' + year + ' 
 
 //  задание 3.0
 
-+str[0]+str[1]+str[2]
+//+str[0]+str[1]+str[2]
 
 //  задание 4.0
 
@@ -81,7 +81,7 @@ switch (true) {
 
 //  задание 8.0
 
-const day = 32
+const day = 300
 
 switch (true) {
     case (day >= 1 && day < 11):
@@ -99,7 +99,7 @@ switch (true) {
 
 // задание 9.0 
 
-let sec = 1,
+/*let sec = 1,
     min = sec * 60,
     hour = min * 60,
     day2 = hour * 24,
@@ -151,5 +151,43 @@ switch (true) {
 console.log(year2 / day2 + ' дней в году ');
 console.log(year2 / hour + ' часов в году ');
 console.log(year2 / min + ' минут в году ');
-console.log(year2 / sec + ' секунд в году ');
+console.log(year2 / sec + ' секунд в году ');*/
 
+switch (true) {
+    case (day >= 1 && day < 31):
+        console.log('Этот день в 1 месяце');
+        break;
+    case (day >= 32 && day < 59):
+        console.log('Этот день во 2м месяце');
+        break;
+    case (day >= 60 && day < 30):
+        console.log('Этот день в 3м месяце');
+        break;
+    case (day >= 93 && day < 120):
+        console.log('Этот день в 4м месяце');
+        break;
+    case (day >= 125 && day < 151):
+        console.log('Этот день в 5м месяце');
+        break;
+    case (day >= 32 && day < 181):
+        console.log('Этот день в 6м месяце');
+        break;
+    case (day >= 32 && day < 212):
+        console.log('Этот день в 7м месяце');
+        break;
+    case (day >= 32 && day < 243):
+        console.log('Этот день в 8м месяце');
+        break;
+    case (day >= 32 && day < 273):
+        console.log('Этот день в 9м месяце');
+        break;
+    case (day >= 32 && day < 304):
+        console.log('Этот день в 10м месяце');
+        break;
+    case (day >= 32 && day < 334):
+        console.log('Этот день в 11м месяце');
+        break;
+    case (day >= 32 && day < 365):
+        console.log('Этот день в 12м месяце');
+    break;
+}
