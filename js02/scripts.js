@@ -1,6 +1,6 @@
 //  задание 1.0
 
-/*let name = prompt('как вас зовут?'),
+let name = prompt('как вас зовут?'),
     age = prompt('какой ваш возраст?'),
     city = prompt('откуда вы?'),
     phone = prompt('укажите номер своего телефона'),
@@ -12,7 +12,7 @@ console.log('Меня зовут ' + name + ' мне ' + age + '. Я прожи�
 //  задание 2.0
 
 let year = 2021 - age;
-console.log('Меня зовут ' + name + ' я родился в ' + year + ' году ');*/
+console.log('Меня зовут ' + name + ' я родился в ' + year + ' году ');
 
 //  задание 3.0
 
@@ -81,7 +81,7 @@ switch (true) {
 
 //  задание 8.0
 
-const day = 300
+const day = 100;
 
 switch (true) {
     case (day >= 1 && day < 11):
@@ -99,7 +99,7 @@ switch (true) {
 
 // задание 9.0 
 
-/*let sec = 1,
+let sec = 1,
     min = sec * 60,
     hour = min * 60,
     day2 = hour * 24,
@@ -151,43 +151,64 @@ switch (true) {
 console.log(year2 / day2 + ' дней в году ');
 console.log(year2 / hour + ' часов в году ');
 console.log(year2 / min + ' минут в году ');
-console.log(year2 / sec + ' секунд в году ');*/
+console.log(year2 / sec + ' секунд в году ');
+
+// задание 10
 
 switch (true) {
-    case (day >= 1 && day < 31):
+    case (day >= 1 && day <= 31):
         console.log('Этот день в 1 месяце');
         break;
-    case (day >= 32 && day < 59):
+    case (day >= 32 && day <= 59):
         console.log('Этот день во 2м месяце');
         break;
-    case (day >= 60 && day < 30):
+    case (day >= 60 && day <= 91):
         console.log('Этот день в 3м месяце');
         break;
-    case (day >= 93 && day < 120):
+    case (day >= 92 && day <= 120):
         console.log('Этот день в 4м месяце');
         break;
-    case (day >= 125 && day < 151):
+    case (day >= 121 && day <= 151):
         console.log('Этот день в 5м месяце');
         break;
-    case (day >= 32 && day < 181):
+    case (day >= 152 && day <= 181):
         console.log('Этот день в 6м месяце');
         break;
-    case (day >= 32 && day < 212):
+    case (day >= 182 && day <= 212):
         console.log('Этот день в 7м месяце');
         break;
-    case (day >= 32 && day < 243):
+    case (day >= 213 && day <= 243):
         console.log('Этот день в 8м месяце');
         break;
-    case (day >= 32 && day < 273):
+    case (day >= 244 && day <= 273):
         console.log('Этот день в 9м месяце');
         break;
-    case (day >= 32 && day < 304):
+    case (day >= 274 && day <= 304):
         console.log('Этот день в 10м месяце');
         break;
-    case (day >= 32 && day < 334):
+    case (day >= 305 && day <= 334):
         console.log('Этот день в 11м месяце');
         break;
-    case (day >= 32 && day < 365):
+    case (day >= 335 && day <= 365):
         console.log('Этот день в 12м месяце');
     break;
 }
+
+switch (true) {
+    case (day <= 59):
+        console.log('зима');
+        break;
+    case (day > 59 && day <= 151):
+        console.log('весна');
+        break;
+    case (day > 151 && day <= 243):
+        console.log('лето');
+        break;
+    case (day > 243 && day <= 334):
+        console.log('весна');
+        break;
+    case (day > 334):
+        console.log('зима');
+        break;
+}
+
