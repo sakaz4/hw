@@ -16,7 +16,20 @@ console.log('Меня зовут ' + name + ' я родился в ' + year + ' 
 
 //  задание 3.0
 
-//+str[0]+str[1]+str[2]
+let str = prompt();
+
+if ((+str[0] + +str[1] + +str[2]) === (+str[3] + +str[4] + +str[5]))
+
+{
+    console.log('Да');
+}
+
+else
+{
+    console.log('нет');
+}
+
+
 
 //  задание 4.0
 
