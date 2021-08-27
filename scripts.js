@@ -8,17 +8,15 @@ for(let u = 35; u > 7; u--){
     console.log(u);
 }
 
-
-
 console.log('Задание №2');
 
 let z = 89;
-
 while(z >= 12) { 
     console.log(z);
     z--;
 }
 console.log(z);
+
 
 console.log('Задание №3');
 
@@ -31,6 +29,7 @@ for (let i = 1; i <= q; i++) {
     }
 }
 console.log(' Sum ' + q + ' = ' + sum)
+
 
 console.log('Задание №4');
 
@@ -50,6 +49,5 @@ for(let k = 8; k <= 56; k++) {
     if (k % 2 == 1) continue; // выводим только чётные числа
     console.log(k);
 }
-
 
 console.log('Задание №6');
