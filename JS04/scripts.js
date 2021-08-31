@@ -61,4 +61,10 @@ let arrNums8 = [12, false, 'Текст', 4, 2, -5, 0];
 arrNums8.reverse();
 document.write(arrNums8);
 document.write('<br/>');
+document.write('<br/>');
+
 document.write('<span id=style>Задание 9</span><br/>');
+document.write('<br/>');
+let arr9 = [5, 9, 21, , , 9, 78, , , , 6];
+let empties = arr9.length - arr9.filter(function(x){ return true }).length;
+document.write(empties);
