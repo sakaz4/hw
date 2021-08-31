@@ -16,7 +16,13 @@ document.write('<br/>');
 document.write('<br/>');
 document.write('<span id=style>Задание 3</span><br/>');
 document.write('<br/>');
+let i = 23;
 
+while(i <= 57) {     
+  document.write(i + '<br/>');
+  i++;
+}
+document.write('<br/>');
 document.write('<span id=style>Задание 4</span><br/>');
 document.write('<br/>');
 let arr4 = ['10', '20', '30', '50', '235', '3000'];
@@ -49,47 +55,10 @@ document.write('<br/>');
 document.write('<span id=style>Задание 7</span><br/>');
 document.write('<br/>');
 
-let count = 0;
-let arrNums = 0;
-FullCycle: for(let value; value !== Number; count++){
-    value = +prompt("Введите число", '');
-    sum8 += value;
-      if (value == 0) {
-        break FullCycle;
-      }     
-  
-      if (null(value)) {
-//        alert('Ошибка');
-        break FullCycle;
-      } 
-}
-arrNums.sort();
-document.write(arrNums);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.write('<span id=style>Задание 8</span><br/>');
+document.write('<br/>');
+let arrNums8 = [12, false, 'Текст', 4, 2, -5, 0];
+arrNums8.reverse();
+document.write(arrNums8);
+document.write('<br/>');
+document.write('<span id=style>Задание 9</span><br/>');
