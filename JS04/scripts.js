@@ -1,4 +1,4 @@
-document.write('<span id=style>Задание 1</span><br/>');
+/*document.write('<span id=style>Задание 1</span><br/>');
 document.write('<br/>');
 let arrNum = [1, 2, 3, 4, 5];
 document.write(arrNum); 
@@ -50,9 +50,22 @@ document.write(arr6);
 document.write('<br/>');
 document.write('Длинна массива равна ' + arr6.length + ' элемента');
 document.write('<br/>');
-document.write('<br/>');
+document.write('<br/>');*/
 
 document.write('<span id=style>Задание 7</span><br/>');
+document.write('<br/>');
+let arr7 = [];
+let answer = prompt('Введите число');
+while(answer !=='') {
+  arr7.push(answer);
+  answer = prompt('Введите число');
+}
+document.write(arr7);
+let result7 = 0;
+for(let m = 0; m < arr7.length; m++) {
+  result7 += +arr7[m];
+}
+document.write(result7);
 document.write('<br/>');
 
 document.write('<span id=style>Задание 8</span><br/>');
