@@ -35,11 +35,14 @@ console.log('c2 = ' + c2);
 
 console.log('Задание 6');
 
+let MyDate = new Date();
+let MyDateString;
+MyDate.setDate(MyDate.getDate() + 20);
+MyDateString = ('0' + MyDate.getDate()).slice(-2) + '.' + ('0' + (MyDate.getMonth()+1)).slice(-2) + '.' + MyDate.getFullYear();
 
+console.log(MyDateString);
 
-
-
-
+console.log('Задание 7');
 
 
 
