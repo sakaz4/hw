@@ -44,6 +44,41 @@ console.log(MyDateString);
 
 console.log('Задание 7');
 
+let str = 'aa aba abba abbba abca abea';
+console.log(str.replace(/ab+a+/g));
+
+console.log('Задание 8');
+
+function validation(phone, str){
+    if (phone.test(str))
+    {
+       console.log("true");
+    }
+    
+    else console.log("false");
+    }
+    
+    validation(/^\+(375|80)(29|33|44|17)\w{7}$/, '+375291234567');
+
+
+    console.log('Задание 9');
+
+    function validation(mail, str){
+        if (mail.test(str))
+        {
+           console.log("true");
+        }
+        
+        else console.log("false");
+        }
+        
+        validation(/^[A-Za-z]{1}[A-Za-z0-9-_]{2,11}@[A-Za-z]{2,5}\.[a-z]{2,11}$/, 'sas.kaz.j@yandex.by');
+
+
+
+
+
+
 
 
 
