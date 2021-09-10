@@ -70,7 +70,7 @@ function validation(mail, str){
     }
     else console.log("false");
     } 
-    validation(/^[A-Za-z]{1}[A-Za-z0-9-_]{2,11}@[A-Za-z]{2,5}\.[a-z]{2,11}$/, 'sas.kaz.j@yandex.by');
+validation(/^[A-Za-z]{1}[A-Za-z0-9-_]{2,11}@[A-Za-z]{2,5}\.[a-z]{2,11}$/, 'sas.kaz.j@yandex.by');
 
 
 
