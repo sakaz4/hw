@@ -25,7 +25,7 @@ let div12 = document.createElement('div');
 div12.classList.add('block12');
 document.body.appendChild(div12);
 
-let div1 = document.createElement('div'); //добавляем div для левой части
+let div1 = document.createElement('div'); 
 div1.classList.add('block1');
 div12.appendChild(div1);
 
@@ -43,9 +43,9 @@ div1.appendChild(p3);
 
 let button1 = document.createElement('button');
 button1.innerHTML = 'Start here'; 
-div1.appendChild(button1);  // спросить про currentDiv вместо div
+div1.appendChild(button1);                        // спросить про currentDiv вместо div
 
-let div2 = document.createElement('div'); //добавляем div для левой части
+let div2 = document.createElement('div'); 
 div2.classList.add('block2');
 div12.appendChild(div2);
 
