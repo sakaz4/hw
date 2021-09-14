@@ -38,10 +38,9 @@ let p3 = document.createElement('p');
 p3.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing ';
 div1.appendChild(p3);
 
-
 let button1 = document.createElement('button');
-button1.innerHTML = 'I am A Button!'; 
-div1.appendChild(button1);  // спросить про currentDiv
+button1.innerHTML = 'Start here'; 
+div1.appendChild(button1);  // спросить про currentDiv вместо div
 
 
 
@@ -56,7 +55,21 @@ div2.classList.add('block2');
 document.body.appendChild(div2);
 
 
+let h44 = document.createElement('h4');
+h44.innerHTML = 'studio';
+div1.appendChild(h44);
 
+let h22 = document.createElement('h2');
+h22.innerHTML = 'Initially designed to';
+div1.appendChild(h22);
+
+let p33 = document.createElement('p');
+p33.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
+div1.appendChild(p33);
+
+let button2 = document.createElement('button');
+button2.innerHTML = 'Start here'; 
+div2.appendChild(button2);
 
 
 
