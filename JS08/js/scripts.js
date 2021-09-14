@@ -21,7 +21,6 @@ p1.innerHTML = 'But I must explain to you how all this mistaken idea of denounci
 document.body.appendChild(h1);
 document.body.appendChild(p1);
 
-
 let div12 = document.createElement('div');
 div12.classList.add('block12');
 document.body.appendChild(div12);
@@ -46,14 +45,6 @@ let button1 = document.createElement('button');
 button1.innerHTML = 'Start here'; 
 div1.appendChild(button1);  // спросить про currentDiv вместо div
 
-
-
-
-
-
-
-
-
 let div2 = document.createElement('div'); //добавляем div для левой части
 div2.classList.add('block2');
 div12.appendChild(div2);
@@ -61,32 +52,90 @@ div12.appendChild(div2);
 
 let h44 = document.createElement('h4');
 h44.innerHTML = 'studio';
-div1.appendChild(h44);
+div2.appendChild(h44);
 
 let h22 = document.createElement('h2');
 h22.innerHTML = 'Initially designed to';
-div1.appendChild(h22);
+div2.appendChild(h22);
 
 let p33 = document.createElement('p');
 p33.innerHTML = 'But I must explain to you how all this mistaken idea of denouncing';
-div1.appendChild(p33);
+div2.appendChild(p33);
 
 let button2 = document.createElement('button');
 button2.innerHTML = 'Start here'; 
 div2.appendChild(button2);
 
 
+//как убрать отступы по умолчанию?
+
+
+h1.style.marginTop = '150px';
+h1.style.marginBottom = '6px';
+h1.style.textAlign = 'center';
+h1.style.fontFamily = 'Arvo';
+h1.style.fontSize = '36px';
+h1.style.lineHeight = '48px';
+h1.style.color = '#212121';
+h1.style.marginBottom = '60px';
+p1.style.textAlign = 'center';
+p1.style.fontFamily = 'Open Sans';
+p1.style.fontSize = '14px';
+p1.style.lineHeight = '26px';
+p1.style.color = '#9FA3A7';
+
+ 
+div12.style.display = 'grid';
+div12.style.gridTemplateColumns = '1fr 1fr';
+div12.style.gridColumnGap = '90px';
+
+div1.style.display = 'grid';
+div1.style.height = '400px';
+h2.style.textAlign = 'center';
+h2.style.fontFamily = 'Arvo';
+h2.style.fontSize = '36px';
+h2.style.lineHeight = '46px';
+h2.style.fontStyle = 'normal';
+h2.style.fontWeight= 'normal';
+h4.style.textAlign = 'center';
+h4.style.marginTop = '90px';
+button1.style.width = '147px';
+button1.style.height = '46px';
+button1.style.border = '3px solid #FFC80A';
+button1.style.borderRadius = '14px';
+button1.style.marginLeft = 'auto';
+button1.style.marginRight = 'auto';
+button1.style.textTransform = 'uppercase';
+
+
+
+div2.style.display = 'grid';
+div2.style.height = '400px';
+p33.style.textAlign = 'center';
+p33.style.textAlign = 'center';
+p33.style.width = '85%';
+div2.style.backgroundColor = '#8F75BE';
+h22.style.textAlign = 'center';
+h22.style.fontFamily = 'Arvo';
+h22.style.fontSize = '36px';
+h22.style.lineHeight = '46px';
+h22.style.fontStyle = 'normal';
+h22.style.fontWeight= 'normal';
+h22.style.color = 'white';
 
 
 
 
-
-
-
-
-
-
-
+h44.style.textAlign = 'center';
+h44.style.color = '#FFC80A';
+h44.style.marginTop = '90px';
+button2.style.width = '147px';
+button2.style.height = '46px';
+button2.style.border = '3px solid #FFC80A';
+button2.style.borderRadius = '14px';
+button2.style.marginLeft = 'auto';
+button2.style.marginRight = 'auto';
+button2.style.textTransform = 'uppercase';
 
 
 
