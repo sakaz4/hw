@@ -22,9 +22,13 @@ document.body.appendChild(h1);
 document.body.appendChild(p1);
 
 
+let div12 = document.createElement('div');
+div12.classList.add('block12');
+document.body.appendChild(div12);
+
 let div1 = document.createElement('div'); //добавляем div для левой части
 div1.classList.add('block1');
-document.body.appendChild(div1);
+div12.appendChild(div1);
 
 let h4 = document.createElement('h4');
 h4.innerHTML = 'freelancer';
@@ -52,7 +56,7 @@ div1.appendChild(button1);  // спросить про currentDiv вместо d
 
 let div2 = document.createElement('div'); //добавляем div для левой части
 div2.classList.add('block2');
-document.body.appendChild(div2);
+div12.appendChild(div2);
 
 
 let h44 = document.createElement('h4');
