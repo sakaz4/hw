@@ -1,9 +1,7 @@
-function want() {
-    let list = document.querySelector("#do");
-};
+let list = document.getElementsByClassName('list');
 
-li.style.display = 'none';
-document.write.want;
+console.log(list);
+
 // вызвали функцию --> список с названием и скрытыми li
 
 
