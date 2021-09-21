@@ -3,7 +3,7 @@ function want() {
 };
 
 li.style.display = 'none';
-want;
+document.write.want;
 // вызвали функцию --> список с названием и скрытыми li
 
 
