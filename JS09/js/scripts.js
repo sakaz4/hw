@@ -10,9 +10,6 @@ console.log(metaUtf8);
 document.head.appendChild(title);
 document.head.appendChild(metaUtf8);
 
-
-
-
 let f = prompt ('Пишите сюда');
     if ( f == 'want') {
         let h1 = document.createElement('h1');
