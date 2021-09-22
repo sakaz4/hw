@@ -3,15 +3,18 @@
     padding: 0;
 }
 
-.list {
-    margin: 40px;
+ul {
+    margin-left: auto;
+    margin-right: auto;
     width: 340px;
     border: 2px solid red;
+    list-style-type: none;
 }
 
 li {
     margin: 2px;
     text-align: center;
+
 }
 
 li:nth-child(even) {
@@ -28,6 +31,3 @@ h3 {
     text-align: center;
 }
 
-li {
-    list-style-type: none;
-}
