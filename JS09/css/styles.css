@@ -31,3 +31,10 @@ h3 {
     text-align: center;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+}
+
+
+

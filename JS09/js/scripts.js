@@ -29,7 +29,8 @@ let f = prompt ('Пишите сюда');
         document.body.appendChild(div1);
             
         let ul1 = document.createElement('ul');
-        ul1.innerHTML = `<li><input placeholder="хотелку писать в сюда" type="text" size="30" ></li>
+        ul1.innerHTML = `<form><li><input class="input" placeholder="хотелку писать в сюда" type="text" size='30'></li>
+        <li><input type="button" value="отправить" onclick="alert('принято')"/></li></form>
         <li>.</li>
         <li>.</li>
         <li>.</li>
@@ -37,16 +38,20 @@ let f = prompt ('Пишите сюда');
         <li>.</li>
         <li>.</li>`;
         document.body.appendChild(ul1);
-
 } else {
     alert('неправильно хочешь, пробуй ещё');
 }
 
+/*const inputText = document.querySelector('.input');
+inputText.value*/
 
 
+/*const inputText = document.querySelector('input')
+inputText.value
 
+при нажатии на кнопку берешь этот текст
 
-
+создаешь элемент списка с этим текстом и очищаешь текст inputText.value = ''*/
 
 
 
