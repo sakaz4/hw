@@ -8,7 +8,6 @@ console.log(metaUtf8);
 document.head.appendChild(title);
 document.head.appendChild(metaUtf8);
 
-
 window.onload = init(); // создаём todo на странице
 
 function init() {   
@@ -37,6 +36,3 @@ function editListItem(event) {
     let newValue = prompt("Что хочешь поменять?"); // спрашиваем про новое значение
     event.target.innerText = newValue; // изменяем текст на тот, который ввели в prompt
 }
-
-
-ul.style.marginTop = '30px';
