@@ -13,7 +13,7 @@ window.onload = init(); // создаём todo на странице
 
 function init() {   
     let todoList = document.createElement("div"); // создаем div для нашего todo списка
-    todoList.innerHTML = '<ul class="todo"><li><input class="input" placeholder="1-6" type="text" value"1-6"></li></ul>'; // ul и первый его элемент - поле ввода
+    todoList.innerHTML = '<ul class="todo"><li><input class="input" placeholder="пишите сюда" type="text"></li></ul>'; // ul и первый его элемент - поле ввода
     document.body.appendChild(todoList); // добавляем его в body страницы
     document.querySelector('.input').onchange = processInput; // привязываем к событию изменения инпута свою функцию обработчик
     // что-то написали и нажали enter - вызвалась функция processInput
