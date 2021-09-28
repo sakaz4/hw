@@ -4,12 +4,15 @@
 }
 
 div {
-    display: flex;
-    justify-content: center;
-    
+    max-width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: blue;
+    color: whitesmoke;
 }
 
 h3 {
+
     margin-top: 10px;
 }
 
@@ -23,4 +26,7 @@ li {
     text-align: center;
 }
 
+li:nth-child(even) {
+    background-color: red;
+}
 
