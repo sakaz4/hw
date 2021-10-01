@@ -8,7 +8,6 @@ console.log(metaUtf8);
 document.head.appendChild(title);
 document.head.appendChild(metaUtf8);
 
-
 window.onload = init(); // создаём todo на странице
 
 function init() {   
