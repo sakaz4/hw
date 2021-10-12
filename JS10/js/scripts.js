@@ -3,10 +3,18 @@ let object34 = {
     talk: 'i want to eat'
 };
 
+// from homework JS07
+let Calc = function() {
+    name: 'calculator';
+    talk: 'click';
+    eat: 'numbers'
+};
 
+object34.__proto__ = Calc;
+console.log(object34);
 
-
-
+object34.prototype = Calc;
+console.log(object34);
 
 
 
