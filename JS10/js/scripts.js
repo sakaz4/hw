@@ -17,8 +17,6 @@ object34.prototype = Calc;
 console.log(object34);
 
 
-
-
 const D = function() {
     this.create = function(name) {
         const elem = document.createElement(name);
@@ -34,6 +32,19 @@ const D = function() {
         if (value) elem.innerHTML = value;
         return elem.innerHTML;
     }  
+
+
+    this.addClass = function (elem, className) {    ////
+        elem.setClass(name, value);
+        return elem.className(name);
+    }
+
+    this.removeClass = function (elem, className) {    ////
+        elem.setClass(name, value);
+        
+    }
+
+
 };
 
 const d = new D();
@@ -42,6 +53,7 @@ console.log(d);
 const h2 = d.create('h2');
 const p1 = d.create('p');
 const div = d.create('div');
+const _class = d.create('.class'); 
 
 d.html(h2, 'element h2');
 d.html(p1, 'element p');
@@ -52,6 +64,7 @@ d.attr(h2, 'class', 'title');
 console.log(h2);
 console.log(p1);
 console.log(div);
+console.log(_class);
 
 console.log(d.html(p1));
 console.log(d.attr(h2,'class'));
