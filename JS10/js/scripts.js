@@ -19,25 +19,7 @@ console.log(object34);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const D = function() {
+const D = function() {
     this.create = function(name) {
         const elem = document.createElement(name);
         return elem;
@@ -72,4 +54,4 @@ console.log(p1);
 console.log(div);
 
 console.log(d.html(p1));
-console.log(d.attr(h2,'class'));*/
+console.log(d.attr(h2,'class'));
