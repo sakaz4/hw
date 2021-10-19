@@ -1,10 +1,3 @@
-class Contacts {
-    constructor(data) {
-        let cont = [];
-    }
-    
-};
-
 
 class User {
     constructor(data) {
@@ -37,6 +30,26 @@ console.log(contact4);
 console.log(contact4.edit());
 console.log(contact4.get());
 
+
+class Contacts {
+    constructor(data) {
+        this.contList = [];
+    }
+
+    add() {
+        const id = this.contList.length;
+        const contact = new User(id, name, email, address, phone);
+        this.contList.push(contact);
+    }
+    
+    edit(id, obj) {
+        this.contList[id].edit(obj);
+    }
+
+    remove(id) {
+        
+    }
+}
 
 
 
