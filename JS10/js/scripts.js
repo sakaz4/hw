@@ -19,13 +19,13 @@ console.log(object34);
 
 const D = function() {
     this.create = function(name) {
-        const elem = document.createElement(name);
+        const elem = document.createElement('h2');
         return elem;
     }
 
     this.attr = function(elem, name, value) {
         elem.setAttribute(name, value);
-        return elem.getAttribute(name); //возвращнение значения поэтому return
+        return elem.getAttribute(name); //возвращение значения поэтому return
     }
 
     this.html = function(elem, value) {
@@ -41,10 +41,7 @@ const D = function() {
 
     this.removeClass = function (elem, className) {    ////
         elem.setClass(name, value);
-        
-    }
-
-
+    };
 };
 
 const d = new D();
