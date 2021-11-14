@@ -19,7 +19,7 @@ class User {                                          //конструктор
     this.phone = phone;
   }
 
-  get() {
+  get() {                                             //получение 
     return {
       id: this.id,
       name: this.name, 

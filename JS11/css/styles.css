@@ -7,29 +7,35 @@ li {
 }
 
 div {
+  width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
+  background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+  padding: 14px;
 }
 
 input {
-  width: 300px;
+  width: 40vw;
   display: flex;
   flex-direction: column;
   padding: 12px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button {
-  background-color: #4caf50;
+  padding: 9px 18px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3dcfc2;
   color: white;
-  padding: 12px 20px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
-  margin-left: 100px;
 }
 
 
