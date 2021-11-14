@@ -41,7 +41,7 @@ class Contacts {
     this.contList.push(user);
   }
 
-  edit(data) {                                     //редактирование контакты, передаём все данные data
+  edit(data) {                                     //редактирование контакта, передаём все данные data
     const {id, name, email, adress, phone} = data; // эл-ты, которые будут приняты за data
       this.contList[id].name = name;              
       this.contList[id].email = email;
@@ -49,7 +49,7 @@ class Contacts {
       this.contList[id].phone = phone;
   }
 
-  remove(id) {
+  remove(id) {                                    //удаление контакта
     delete this.contList[id];
   }
 }
@@ -67,10 +67,9 @@ class Contacts {
         this.contList = new ContList
     }
 
-    createBtnDel(id) {
-
-      const openModal = () => {
-        document.body.insertAdjacentHTML('beforeend', `
+    createBtnDel(id) {                           // создаём кнопки удаления и редактирования
+      const openModal = () => {                  // конструктор и стрелочная функция
+        document.body.insertAdjacentHTML('beforeend', ` 
           <div class="wrapper_modal">
             <div class="box_modal">
               <span class="close">close</span>
@@ -82,20 +81,20 @@ class Contacts {
       const boxInfo = document.querySelector('.box_modal'); 
       const nameInput = document.createElement('input');
       const emailInput = document.createElement('textarea');
-      const adressInput = document.createElement('textarea');
+      const addressInput = document.createElement('textarea');
       const phoneInput = document.createElement('textarea');
       const btn2 = document.createElement('button');
       btn2.innerText = 'Ввод';
 
-      btn2.addEventListener('click', () => { // 
-        this.editUser({id: id, name: nameInput.value, email: emailInput.value, adress: adressInput.value, phone: phoneInput.value});
+      btn2.addEventListener('click', () => { // добавление действия к кнопке
+        this.editUser({id: id, name: nameInput.value, email: emailInput.value, addвress: addressInput.value, phone: phoneInput.value});
          closeModal();
          this.draw();
       })
 
       boxInfo.appendChild(nameInput); 
       boxInfo.appendChild(emailInput);
-      boxInfo.appendChild(adressInput);
+      boxInfo.appendChild(addressInput);
       boxInfo.appendChild(phoneInput);
       boxInfo.appendChild(btn2);
       const close = document.querySelector('.close');
@@ -106,8 +105,8 @@ class Contacts {
       const btnEdit = document.createElement('button');
       const btnRemove = document.createElement('button');
 
-      btnEdit.innerText = 'изменить';
-      btnRemove.innerText = 'удалить'; 
+      btnEdit.innerText = 'изменить';                   // добавление текста на копке редактирования
+      btnRemove.innerText = 'удалить';                  // добавление текста на копке удаления
 
 
       btnRemove.addEventListener('click', () => {       // добавляем действие к клику по кнопке удаления
@@ -116,7 +115,7 @@ class Contacts {
       })
   
       btnEdit.addEventListener('click', openModal);    // добавляем действие по клику по кнопке редактирования, открывается модальное окно
-        nodeElem.appendChild(btnEdit);
+        nodeElem.appendChild(btnEdit);                 // добавление кнопки
         nodeElem.appendChild(btnRemove);
           
       return nodeElem;
@@ -190,7 +189,6 @@ class Contacts {
       this.draw();      
     })
     document.body.appendChild(divConts);
-
   }
 }
 
