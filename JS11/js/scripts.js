@@ -43,10 +43,10 @@ class Contacts {
 
   edit(data) {                                     //редактирование контакты, передаём все данные data
     const {id, name, email, adress, phone} = data; // эл-ты, которые будут приняты за data
-      this.usersList[id].name = name;              
-      this.usersList[id].email = email;
-      this.usersList[id].adress = adress;
-      this.usersList[id].phone = phone;
+      this.contList[id].name = name;              
+      this.contList[id].email = email;
+      this.contList[id].adress = adress;
+      this.contList[id].phone = phone;
   }
 
   remove(id) {
@@ -63,17 +63,17 @@ class Contacts {
         return this.localStorage;
       }
 
-    set storage(newUsersList) {                   // настройка 
-        this.usersList = new ContList
+    set storage(newContList) {                   // настройка 
+        this.contList = new ContList
     }
 
     createBtnDel(id) {
 
       const openModal = () => {
-        document.body.insertAdjaceneHTML('beforeend', `
+        document.body.insertAdjacentHTML('beforeend', `
           <div class="wrapper_modal">
             <div class="box_modal">
-              <span class="close">X</span>
+              <span class="close">close</span>
               <h1>изменить</h1>
             </div>
           </div>
@@ -102,8 +102,6 @@ class Contacts {
       close.addEventListener('click', closeModal);
     }
 
-
-
     const nodeElem = document.createElement('div');     //создаём блок с кнопками редактирования и удаления
       const btnEdit = document.createElement('button');
       const btnRemove = document.createElement('button');
@@ -125,14 +123,14 @@ class Contacts {
     }
 
     draw() {
-      this.localContacts = this.usersList;
+      this.localContacts = this.contList;
       const oldUser = document.getElementById('userData');
       if (oldUser) {
           oldUser.remove();
       }
       const userInfo = document.createElement('ul');            //создание списка с данными пользователя
       userInfo.id = 'userInfo';
-      this.usersList.map((user) => {                            //создаём массив с данными пользователя
+      this.contList.map((user) => {                            //создаём массив с данными пользователя
           const li = document.createElement('li');
           const nameNode = document.createElement('h2');
           nameNode.innerText = user.name;
@@ -146,7 +144,7 @@ class Contacts {
           li.appendChild(emailNode);
           li.appendChild(addressNode);
           li.appendChild(phoneNode);
-          userData.appendChild(li);
+          userInfo.appendChild(li);
           const btns = this.createBtnDel(user.id)
           li.appendChild(btns);
           // this.draw();
