@@ -54,16 +54,16 @@ class Contacts {
   }
 }
 
-  class ContApp extends Contacts {                   //создание дочернего эл - та
+  class ContApp extends Contacts {          //создание дочернего эл - та
     constructor() {
-      super();                                       // слово для вызова функций, которые пренадлежат Contacts
+      super();                                     // слово для вызова функций, которые пренадлежат Contacts
     }
 
-    get storage() {                               // получение 
+    get storage() {                                      // получение 
         return this.localStorage;
       }
 
-    set storage(newContList) {                   // настройка 
+    set storage(newContList) {               // настройка 
         this.contList = new ContList
     }
 
@@ -77,7 +77,7 @@ class Contacts {
             </div>
           </div>
         `)
-                            // создание элементов ввода данных и кнопки 
+                                                            // создание элементов ввода данных и кнопки 
       const boxInfo = document.querySelector('.box_modal'); 
       const nameInput = document.createElement('input');
       const emailInput = document.createElement('textarea');
@@ -85,7 +85,6 @@ class Contacts {
       const phoneInput = document.createElement('textarea');
       const btn2 = document.createElement('button');
       btn2.innerText = 'Ввод';
-
       btn2.addEventListener('click', () => { // добавление действия к кнопке
         this.editUser({id: id, name: nameInput.value, email: emailInput.value, addвress: addressInput.value, phone: phoneInput.value});
          closeModal();
@@ -104,18 +103,15 @@ class Contacts {
     const nodeElem = document.createElement('div');     //создаём блок с кнопками редактирования и удаления
       const btnEdit = document.createElement('button');
       const btnRemove = document.createElement('button');
-
-      btnEdit.innerText = 'изменить';                   // добавление текста на копке редактирования
-      btnRemove.innerText = 'удалить';                  // добавление текста на копке удаления
-
-
-      btnRemove.addEventListener('click', () => {       // добавляем действие к клику по кнопке удаления
+      btnEdit.innerText = 'изменить';                            // добавление текста на копке редактирования
+      btnRemove.innerText = 'удалить';                       // добавление текста на копке удаления
+      btnRemove.addEventListener('click', () => {      // обавляем действие к клику по кнопке удаления
         this.removeUser(id);
         this.draw();
       })
   
       btnEdit.addEventListener('click', openModal);    // добавляем действие по клику по кнопке редактирования, открывается модальное окно
-        nodeElem.appendChild(btnEdit);                 // добавление кнопки
+        nodeElem.appendChild(btnEdit);                      // добавление кнопки
         nodeElem.appendChild(btnRemove);
           
       return nodeElem;
@@ -173,18 +169,17 @@ class Contacts {
     form.appendChild(inputPhone);
     form.appendChild(addBtn);
     divConts.appendChild(form);
-
     form.addEventListener('submit', (event) => {            //добавление действия к отправке формы
-      event.preventDefault();
-      const name = event.currentTarget[0].value;
+      event.preventDefault();                                               // действие по умолчанию
+      const name = event.currentTarget[0].value;             // name
       event.currentTarget[0].value = '';
-      const email = event.currentTarget[1].value;
+      const email = event.currentTarget[1].value;             // email
       event.currentTarget[1].value = '';
-      const address = event.currentTarget[2].value;
+      const address = event.currentTarget[2].value;         // address
       event.currentTarget[2].value = '';
-      const phone = event.currentTarget[3].value;
+      const phone = event.currentTarget[3].value;           // telephone
       event.currentTarget[3].value = '';
-      this.create(name, email, address, phone);
+      this.create(name, email, address, phone);                 // создание нужного свойства
       console.log(name, email, address, phone);
       this.draw();      
     })
