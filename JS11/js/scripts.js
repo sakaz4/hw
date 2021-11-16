@@ -45,7 +45,7 @@ class Contacts {
     const {id, name, email, adress, phone} = data; // эл-ты, которые будут приняты за data
       this.contList[id].name = name;              
       this.contList[id].email = email;
-      this.contList[id].adress = adress;
+      this.contList[id].address = address;
       this.contList[id].phone = phone;
   }
 
@@ -59,7 +59,7 @@ class Contacts {
       super();                                     // слово для вызова функций, которые пренадлежат Contacts
     }
 
-    get storage() {                                      // получение 
+    get storage() {                                      // получение  
         return this.localStorage;
       }
 
@@ -86,7 +86,7 @@ class Contacts {
       const btn2 = document.createElement('button');
       btn2.innerText = 'Ввод';
       btn2.addEventListener('click', () => { // добавление действия к кнопке
-        this.edit({id: id, name: nameInput.value, email: emailInput.value, addвress: addressInput.value, phone: phoneInput.value});
+        this.edit({id: id, name: nameInput.value, email: emailInput.value, address: addressInput.value, phone: phoneInput.value});
          closeModal();
          this.draw();
       })
