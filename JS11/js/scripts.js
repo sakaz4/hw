@@ -6,7 +6,7 @@ function closeModal() {
 class User {                                          //конструктор 
   constructor(id, name, email, address, phone) {      //передаваемые свойства
     this.id = id;
-    this.name = name;
+    this.name = name;                         
     this.email = email;
     this.address = address;
     this.phone = phone;
@@ -19,12 +19,12 @@ class User {                                          //конструктор
     this.phone = phone;
   }
 
-  get() {                                             //получение 
+  get() {                                             //получение списка контактов
     return {
       id: this.id,
       name: this.name, 
       email: this.email,
-      adress: this.address, 
+      address: this.address, 
       phone: this.phone, 
     }
   }
@@ -86,7 +86,7 @@ class Contacts {
       const btn2 = document.createElement('button');
       btn2.innerText = 'Ввод';
       btn2.addEventListener('click', () => { // добавление действия к кнопке
-        this.edit({id: id, name: nameInput.value, email: emailInput.value, address: addressInput.value, phone: phoneInput.value});
+        this.edit({id: id, name: nameInput.value, email: emailInput.value, address: addressInput.value, phone: phoneInput.value});                                                        // не выводит имя
          closeModal();
          this.draw();
       })
