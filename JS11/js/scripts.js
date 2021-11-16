@@ -119,7 +119,7 @@ class Contacts {
 
     draw() {
       this.localContacts = this.contList;
-      const oldUser = document.getElementById('userData');
+      const oldUser = document.getElementById('userInfo');
       if (oldUser) {
           oldUser.remove();
       }
