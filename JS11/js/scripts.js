@@ -86,7 +86,7 @@ class Contacts {
       const btn2 = document.createElement('button');
       btn2.innerText = 'Ввод';
       btn2.addEventListener('click', () => { // добавление действия к кнопке
-        this.editUser({id: id, name: nameInput.value, email: emailInput.value, addвress: addressInput.value, phone: phoneInput.value});
+        this.edit({id: id, name: nameInput.value, email: emailInput.value, addвress: addressInput.value, phone: phoneInput.value});
          closeModal();
          this.draw();
       })
@@ -190,4 +190,3 @@ class Contacts {
 const user = new User('Joe', 'joe_cat@gmail.com', 'Minsk', '+37529 1234567');
 const contApp = new ContApp();
 contApp.init();
-
