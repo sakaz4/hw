@@ -37,7 +37,7 @@ class Contacts {
 
   create(name, email, address, phone) {
     const id = this.contList.length;
-    const user = new User(name, email, address, phone);
+    const user = new User(id, name, email, address, phone);
     this.contList.push(user);
   }
 
