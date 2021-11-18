@@ -42,7 +42,7 @@ class Contacts {
   }
 
   edit(data) {                                     //редактирование контакта, передаём все данные data
-    const {id, name, email, adress, phone} = data; // эл-ты, которые будут приняты за data
+    const {id, name, email, address, phone} = data; // эл-ты, которые будут приняты за data
       this.contList[id].name = name;              
       this.contList[id].email = email;
       this.contList[id].address = address;
