@@ -43,14 +43,15 @@ class Contacts {
 
   edit(data) {                                     //редактирование контакта, передаём все данные data
     const {id, name, email, address, phone} = data; // эл-ты, которые будут приняты за data
-      this.contList[id+1].name = name;                      // ошибка со свойствами name
-      this.contList[id+1].email = email;
-      this.contList[id+1].address = address;
-      this.contList[id+1].phone = phone;
+      this.contList[id].id = id;
+      this.contList[id].name = name;                      // ошибка со свойствами name
+      this.contList[id].email = email;
+      this.contList[id].address = address;
+      this.contList[id].phone = phone;
   }
 
   remove(id) {                                    //удаление контакта
-    delete this.contList[id];
+    delete this.contList[id-1];
   }
 }
 
