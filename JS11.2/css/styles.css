@@ -2,7 +2,7 @@ body {
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    background: url(https://wallpaperaccess.com/full/1210710.jpg);
+    background: url(https://wallpapercave.com/wp/wp1090472.jpg);
     background-size: 100%;
     color: whitesmoke;
     }
@@ -26,6 +26,7 @@ input:first-child {
 #contactList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    color: red;
 }
 
 h2 {
@@ -72,10 +73,10 @@ button {
 
 .modal-box {
     position: relative;
-    background: url(https://wallpaperaccess.com/full/1210710.jpg) no-repeat;
+    background: url(https://previews.123rf.com/images/oatstocker/oatstocker1711/oatstocker171100258/90740278-notepad-with-compass-wood-background-using-wallpaper-or-background-travel-or-navigator-image-.jpg) no-repeat;
     background-size: 100%;
     width: 40vw;
-    height: 400px;
+    height: 290px;
     padding: 60px;
     border: #3dcfc2 2px solid;
 }
