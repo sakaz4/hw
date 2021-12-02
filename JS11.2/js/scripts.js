@@ -175,7 +175,7 @@ class ContactsApp extends Contacts {
         const emailNode = document.createElement("p");
         emailNode.innerText = contact.email;
         const addressNode = document.createElement("p");
-        addressNode.innerText = contact.address;
+        addressNode.innerText = contact.address.city;
         const phoneNode = document.createElement("p");
         phoneNode.innerText = contact.phone;
         li.appendChild(contactNode);
@@ -236,7 +236,7 @@ class ContactsApp extends Contacts {
     }
   }
 }
-const contact1 = new User("Alex", "alex@gmail.com", "Minsk", "80299465235");
+const contact1 = new User("batman", "batman@gmail.com", "Minsk", "8029 ");
 const listOfContacts = new ContactsApp();
 listOfContacts.creation();
 console.log(listOfContacts);
