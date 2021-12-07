@@ -42,9 +42,9 @@ export function checkHash() {
 window.addEventListener('hashchange', checkHash);
 export function getCookie(cname) {
     let name = cname + "=";
-    let ca = document.cookie.split(';');
-    for(let i = 0; i < ca.length; i++) {
-      let c = ca[i];
+    let ccc = document.cookie.split(';');
+    for(let i = 0; i < ccc.length; i++) {
+      let c = ccc[i];
       while (c.charAt(0) == ' ') {
         c = c.substring(1);
       }
@@ -68,9 +68,8 @@ export function openModal(htmlElement) {
     document.body.insertAdjacentHTML('beforeend', `
     <div class="modal-wrapper">
         <div class="modal-box">
-            <span class="close">x</span>
+            <span class="close">X</span>
             <h1>Lets select product fo you</h1>
-            
         </div>
     </div>
     `)
