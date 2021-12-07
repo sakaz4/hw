@@ -22,8 +22,6 @@ if(location.hash === '') {
     checkHash();
 }
 
-
-
 export function checkHash() {
     const hash = location.hash;
     console.log(hash);
@@ -64,7 +62,6 @@ export function setCookie(cname, cvalue, exdays = 10) {
     let expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + JSON.stringify(cvalue) + ";" + expires + ";path=/";
 }
-
 
 export function openModal(htmlElement) {
     // modalWindow.style.display = 'flex';

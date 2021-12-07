@@ -2,7 +2,6 @@ import {CONTAINER} from './../index.js';
 import {getCookie} from './../index.js';
 import {setCookie} from './../index.js';
 import {openModal} from './../index.js';
-
 export default class Main {
     constructor (){
 
@@ -110,7 +109,6 @@ export default class Main {
             cardsContainer.appendChild(cardItem);
         })
         CONTAINER.appendChild(cardsContainer)
-    
         if(location.hash !== '#products') {
             const productId = location.hash.replace('#products/', '');
             const product = products.find((item) => item.id == productId)
