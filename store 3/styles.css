@@ -117,8 +117,8 @@ strong {
 }
 
 .modal-box h1 {
-  color: white
-  -webkit-text-stroke: .07em rgba(0,0,0,.5);
+  color: white;
+  text-shadow: 1px 2px 2px black;
 }
 
 .close {
