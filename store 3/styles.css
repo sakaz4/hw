@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  margin: 0 auto;
+  height: 500px;
+  background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/08/dark-batman_1596915655.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.header, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-info {
+  position: relative;
+  top: 24vh;
+  padding: 10px;
+  color: white;
+}
+
+menu {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  color: white;
+}
+menu li {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.container h1 {
+  margin: 0;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.container p {
+  color: white;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+strong {
+  color: white;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  background: rgb(255, 255, 255);
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px rgba(32, 182, 184, 0.5);
+  border-radius: 10px;
+  padding: 30px;
+  row-gap: 15px;
+  cursor: pointer;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 10%;
+}
+
+.card img {
+  max-width: 50%;
+}
+
+.modal-wrapper {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  position: relative;
+  background-image: url(https://www.desktopbackground.org/download/1920x1200/2012/08/10/434328_buy-wallpapers-online-wallpapers-hd-base_2218x2216_h.jpg);
+  background-size: cover;
+  max-width: 800px;
+  width: 90%;
+  height: 70vh;
+  padding: 60px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.modal-box h1 {
+  color: white
+  -webkit-text-stroke: .07em rgba(0,0,0,.5);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.counter-block {
+  display: flex;
+  background: #F0F0F3;
+  box-shadow: inset 5px 5px 4px rgba(174, 174, 192, 0.2), inset -5px -5px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  width: 160px;
+  justify-content: space-between;
+  align-items: center;
+  color:  #A3ADB2;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.counter-block span {
+  background: #F0F0F3;
+  box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.4), 5px 5px 10px rgba(174, 174, 192, 0.2), inset -2px -2px 4px rgba(0, 0, 0, 0.1), inset 2px 2px 4px #FFFFFF;
+  border-radius: 20px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  #A3ADB2;
+  font-size: 18px;
+}
+
+.remove {
+  max-width: 100px;
+  margin: 20px;
+  background-color: rgb(101, 126, 214);
+  cursor: pointer;
+  border-radius: 50px;
+}

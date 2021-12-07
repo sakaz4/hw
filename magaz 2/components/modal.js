@@ -6,7 +6,7 @@ export function openModal(htmlElement) {
     <div class="modal-wrapper">
         <div class="modal-box">
             <span class="close">x</span>
-            <h1>Modal window</h1>
+            <h1>Select product</h1>
             
         </div>
     </div>
