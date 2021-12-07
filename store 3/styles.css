@@ -5,10 +5,9 @@ body {
 
 .app {
   margin: 0 auto;
-  height: 500px;
   background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/08/dark-batman_1596915655.jpg);
-  background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
+  height: 800px;
 }
 
 .header, .footer {
