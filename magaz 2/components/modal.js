@@ -1,5 +1,3 @@
-
-
 export function openModal(htmlElement) {
     // modalWindow.style.display = 'flex';
     document.body.insertAdjacentHTML('beforeend', `
